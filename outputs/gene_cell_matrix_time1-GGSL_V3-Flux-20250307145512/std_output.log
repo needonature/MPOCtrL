@@ -1,0 +1,86 @@
+**************************************************************************************************** 
+Current Input parameters:
+Namespace(seed=42, input_dir_path='./inputs', network_dir_path='./networks', output_dir_path='./outputs/gene_cell_matrix_time1-GGSL_V3-Flux-20250307145512', gene_expression_file_name='gene_cell_matrix_time1.csv', compounds_reactions_file_name='GGSL_V3_cmMat.csv', reactions_genes_file_name='GGSL_V3_reactions_genes.json', experiment_name='Flux', n_epoch=200, batch_size=10240, mpo_n_epoch=10, mpo_stop_threshold=0.0001, mpo_learning_rate=0.7, mpo_beta_2=0.5)
+ ****************************************************************************************************
+Current CPU cores: 32 GPT devices: 1
+****************************************************************************************************
+Gene Expression Data shape:(75, 7379)
+Gene Expression Data sample:
+            RP11-6N13.4  RP4-566L20.1      MAP1B  SLC7A5P1     LENG9
+E3.49.3408          0.0           0.0   7.188617       0.0  4.338537
+E3.3.458            0.0           0.0   4.681617       0.0  3.621040
+E3.52.3434          0.0           0.0  10.667183       0.0  0.000000
+E3.50.3417          0.0           0.0   6.777850       0.0  0.000000
+E3.45.3374          0.0           0.0   9.651333       0.0  0.000000
+****************************************************************************************************
+****************************************************************************************************
+Current Reaction - Intersection Genes
+M_1 - ['SLC2A1']
+M_2 - ['GCK', 'ALDOC', 'FBP1', 'HKDC1']
+M_3 - ['BPGM', 'COQ2']
+M_4 - ['BPGM', 'ENO2', 'COQ2', 'PCK2']
+M_5 - ['FBP1', 'TKTL1', 'PGM1', 'RBKS', 'ALDOC']
+M_6 - ['PHGDH', 'PSAT1']
+M_7 - ['LDHD', 'LDHAL6A', 'LDHC']
+M_8 - []
+M_9 - []
+M_10 - ['AASS', 'GGT7', 'OPLAH', 'GGT1', 'ALDH4A1', 'NAALAD2', 'AADAT']
+M_11 - []
+M_12 - ['SLC1A5', 'SLC1A3', 'SLC7A11']
+M_13 - ['SLC1A5', 'SLC38A2', 'SLC38A1']
+M_14 - ['CCBL2', 'GFPT2', 'ASNS', 'CCBL1']
+M_15 - ['GGT7', 'GGT1', 'FTCD', 'ALDH18A1']
+M_16 - ['SLC1A5']
+M_17 - ['GLS2']
+M_18 - ['SLC25A22', 'SLC25A18']
+M_19 - []
+M_20 - ['GOT1L1']
+M_21 - ['ACO1']
+M_22 - ['IDH2']
+M_23 - ['SLC25A1']
+M_24 - ['HSD17B6', 'HSD17B7', 'HSD11B2', 'FASN', 'ACSL4', 'ACSL1', 'HSD17B8', 'OXSM', 'SLC27A2']
+M_25 - ['GSS']
+M_26 - ['GGT7', 'GGT1', 'HAGHL']
+M_27 - ['GSTM4', 'GSTA3', 'GSTA4', 'GSTO1', 'GSTT1', 'GSTT2B', 'MGST1', 'GSTM1']
+M_28 - ['GPX3', 'GPX2']
+M_30 - ['CBS', 'CTH']
+M_31 - ['CDO1']
+M_32 - []
+M_33 - ['GAD1']
+M_34 - []
+M_35 - []
+M_36 - []
+M_37 - []
+M_38 - []
+M_39 - ['SUCLG2']
+M_40 - []
+M_41 - ['SLC25A13']
+Compounds Reactions ADJ Matrix: 
+                M_1  M_2  M_3  M_4  M_5  ...  M_37  M_38  M_39  M_40  M_41
+1                                        ...                              
+Pyruvate_Cyto     0    0    0    1    0  ...     0     0     0     0     0
+Acetyl-CoA        0    0    0    0    0  ...     0     0     0     0     0
+Glutamate_Mito    0    0    0    0    0  ...     0     0     0     0     0
+Glutamate_Cyto    0    0    0    0    0  ...     0     0     0     0     0
+2OG_Mito          0    0    0    0    0  ...     0     0     0     0     0
+Oxaloacetate      0    0    0    0    0  ...     0     0     0     1     0
+Succinate         0    0    0    0    0  ...     1    -1     1     0     0
+Asparate          0    0    0    0    0  ...     0     0     0     0    -1
+GSH               0    0    0    0    0  ...     0     0     0     0     0
+Glutamine_Mito    0    0    0    0    0  ...     0     0     0     0     0
+Glutamine_Cyto    0    0    0    0    0  ...     0     0     0     0     0
+Succinyl-CoA      0    0    0    0    0  ...     0     0    -1     0     0
+L-Cysteine        0    0    0    0    0  ...     0     0     0     0     0
+G3P               0    1   -1    0   -1  ...     0     0     0     0     0
+Malate            0    0    0    0    0  ...     0     1     0    -1     0
+Citrate_Mito      0    0    0    0    0  ...     0     0     0     0     0
+Citrate_Cyto      0    0    0    0    0  ...     0     0     0     0     0
+Lactate           0    0    0    0    0  ...     0     0     0     0     0
+3PG               0    0    1   -1    0  ...     0     0     0     0     0
+Glucose           1   -1    0    0    0  ...     0     0     0     0     0
+GABA              0    0    0    0    0  ...    -1     0     0     0     0
+ItaconicAcid      0    0    0    0    0  ...     0     0     0     0     0
+
+[22 rows x 40 columns]
+
+Testing: |          | 0/? [00:00<?, ?it/s]Testing:   0%|          | 0/1 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]Testing DataLoader 0: 100%|██████████| 1/1 [00:00<00:00, 64.63it/s]Testing DataLoader 0: 100%|██████████| 1/1 [00:00<00:00, 62.66it/s]
