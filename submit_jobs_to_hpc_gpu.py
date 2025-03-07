@@ -28,13 +28,13 @@ def create_output_dir(output_dir_path, data_name, network_name):
 
 def main():
     # define your data path
-    input_dir_path = "/your/data/path"  # eg. /home/username/data
+    input_dir_path = "./inputs"  # eg. /home/username/data
 
     # define your network path
-    network_dir_path = "/your/network/path"  # eg. /home/username/network
+    network_dir_path = "./networks"  # eg. /home/username/network
 
     # define your save path
-    output_dir_path = "/your/save/path"  # eg. /home/username/results
+    output_dir_path = "./outputs"  # eg. /home/username/results
 
     # common network and gene list, customize based on your cases
     network_list = ["GGSL_V3_cmMat.csv", "M171_V3_connected_cmMat.csv"]
@@ -45,11 +45,12 @@ def main():
 
     # data list, customize based on your data
     data_list = [
-        "PAAD_data_mrna_seq_v2_rsem_log1p.csv.gz",
-        "TCGA_PAAD_log1p.csv.gz",
+        # "PAAD_data_mrna_seq_v2_rsem_log1p.csv.gz",
+        # "TCGA_PAAD_log1p.csv.gz",
+        gene_cell_matrix_time1.csv
     ]
 
-    email_address = "xxxxxx@xxx.xx"  # your email address, will receive the job status
+    email_address = "luxin@ohsu.edu"  # your email address, will receive the job status
 
     # submit you data jobs to HPC - GPU
     for data in data_list:
